@@ -26,55 +26,65 @@
       <span class="icon-bar"></span>
     </button>
     <!-- Use a "home" glyphicon as a logo. -->
-    <a class="navbar-brand" href="#">
-      <!-- This is how you display a glyphicon. -->
-      <span class="glyphicon glyphicon-home"></span>
-    </a>
   </div>
   <!-- On mobile, this div is hidden by default. The user hits the button
   in the `navbar-header` to see the content of the div.
   On desktop, this div is visible all of the time. -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <div class="nav navbar-nav navbar-left">
+    <div class="nav navbar-nav navbar-left true-left">
       <!-- left-aligned items -->
       <div class="btn-toolbar" role="toolbar">
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default navbar-btn">
             <span class="glyphicon glyphicon-home"></span>
             Home
           </button>
         </div>
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default navbar-btn">
             <span class="glyphicon glyphicon-flash"></span>
             Moments
           </button>
         </div>
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default navbar-btn">
             <span class="glyphicon glyphicon-bell"></span>
             Notifications
           </button>
         </div>
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default">
+          <button type="button" class="btn btn-default navbar-btn">
             <span class="glyphicon glyphicon-envelope"></span>
             Messages
           </button>
         </div>
       </div>
     </div>
-  <form class="nav navbar-nav navbar-right col-xs-3 role="search"">
-    <!-- Right-aligned items. -->
-      <div class="input-group pull-right">
-        <input type="text" class="form-control" placeholder="Search Twitter">
-        <span class="input-group-btn">
-          <button type="submit" class="btn btn-default">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
+
+  <div class="nav navbar-nav navbar-right">
+    <form class="nav navbar-nav navbar-left" role="search">
+      <!-- Right-aligned items. -->
+        <div class="input-group tw-search">
+          <input type="text" class="form-control navbar-btn" placeholder="Search Twitter">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-default navbar-btn">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default navbar-btn">
+          PIC
+        </button>
       </div>
-    </form>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default navbar-btn">
+          Tweet
+          <span class="glyphicon glyphicon-edit"></span>
+        </button>
+      </div>
+  </div>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
   </nav>
@@ -91,7 +101,111 @@
       </div>
       <!-- Main feed: A cell that spans 7 columns -->
       <div class="col-md-6">
-        Main Feed
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-8">
+                  <div class="media">
+                    <div class="media-left media-top">
+                      PIC
+                    </div>
+                    <div class="media-body">
+                      <a href="#">Nasa</a>
+                      <span class="glyphicon glyphicon-check"></span>
+                      <br>@Nasa
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="btn-group following-buttons" role="group">
+                    <button type="button" class="btn btn-default navbar-btn fb-notifications">
+                      <span class="glyphicon glyphicon-asterisk"></span>
+                    </button>
+                    <button type="button" class="btn btn-default navbar-btn fb-notifications">
+                      Following
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- Post content -->
+              <div class="row">
+                <div class="col-md-12">
+This spiral galaxy hosts a supermassive black hole that's also super-hungry: <a>http://go.nasa.gov/1Rp6V2w</a>  <a/>@NASA_Hubble</a>
+<img src="img/space.jpg-large" width="100%" />
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-inline">
+                    <li>
+                      Retweets
+                      <br>
+                      1747
+                    </li>
+                    <li>
+                      Likes
+                      <br>
+                      2911
+                    </li>
+                    <li class="liked-by pull-right">
+                      <a href="#">Pic</a>
+                      <a href="#">Pic</a>
+                      <a href="#">Pic</a>
+                      <a href="#">Pic</a>
+                      <a href="#">Pic</a>
+                      <a href="#">Pic</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-md-12">
+                  9:44 AM - 8 Jan 2016
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 tweet-options">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default navbar-btn">
+                      <span class="glyphicon glyphicon-arrow-left"></span>
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default navbar-btn">
+                      <span class="glyphicon glyphicon-retweet"></span>
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default navbar-btn">
+                      <span class="glyphicon glyphicon-heart"></span>
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default navbar-btn">
+                      <span class="glyphicon glyphicon-option-horizontal"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel-footer">
+                <li class="media">
+                  <div class="media-left media-top">
+                    PIC
+                  </div>
+                  <div class="media-body">
+                    <div class="input-group col-md-12">
+                      <input type="text" class="form-control"
+                      placeholder="Reply to @NASA @NASA_Hubble">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Right empty space -->
       <div class="col-md-3">
